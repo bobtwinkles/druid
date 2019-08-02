@@ -34,9 +34,9 @@ extern crate gdk;
 #[cfg(target_os = "linux")]
 extern crate gio;
 #[cfg(target_os = "linux")]
-extern crate gtk;
-#[cfg(target_os = "linux")]
 extern crate glib;
+#[cfg(target_os = "linux")]
+extern crate gtk;
 
 #[macro_use]
 extern crate lazy_static;
