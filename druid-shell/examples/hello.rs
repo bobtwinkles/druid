@@ -56,6 +56,12 @@ impl WinHandler for HelloState {
                 let filename = self.handle.file_dialog(FileDialogType::Open, options);
                 println!("result: {:?}", filename);
             }
+            0x102 => {
+                let mut options = FileDialogOptions::default();
+                options.set_show_hidden();
+                let filename = self.handle.file_dialog(FileDialogType::Save, options);
+                println!("result: {:?}", filename);
+            }
             _ => println!("unexpected id {}", id),
         }
     }
