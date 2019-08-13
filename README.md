@@ -56,6 +56,12 @@ On macOS, druid requires cairo; see [gtk-rs dependencies] for installation instr
 
 You may also need to set your `PKG_CONFIG_PATH`; assuming you have installed `cairo` through homebrew, you can build with,
 
+### Linux
+
+On Linux, druid requires gtk+3; see[gtk-rs dependencies] for installation instructions.
+
+run `cargo build`
+
  ```shell
 $> PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig" cargo build
  ```
